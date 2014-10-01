@@ -1,0 +1,16 @@
+<html>
+<head>
+    <title>midi.js sample</title>
+    <script src="midi.js"></script>
+    <script type="text/javascript">
+        MIDI.init("outputPortList");
+    </script>
+</head>
+<body>
+    midi.js sample<br>
+    output port: <select id="outputPortList"></select><br>
+<button onclick="MIDI.outputMessage(176,12,1)">out(176,12,1)</button><br>
+<button onclick="MIDI.noteOn(1,40,127)">noteOn(1,40,127)</button><br>
+<button onclick="MIDI.noteOff(1,40,127)">noteOff(1,40,127)</button><br>
+</body>
+</html>
